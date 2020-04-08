@@ -2,5 +2,16 @@
     "extends": [
         "react-app",
         "airbnb"
-    ]
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [
+            1, /*1 - regula wlaczona , 0 - regulywa off*/
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ]
+    }
 }
