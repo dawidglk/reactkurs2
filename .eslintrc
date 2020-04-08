@@ -1,5 +1,9 @@
 {
   "extends": ["airbnb", "prettier", "prettier/react"],
+  "env": {
+    "jest": true
+  },
+  "globals": { "document": true, "window": true, "fetch": true },
   "rules": {
     "react/jsx-filename-extension": [
       1 /*1 - regula wlaczona , 0 - regulywa off*/,
@@ -9,3 +13,5 @@
     ]
   }
 }
+
+// puszczanie eslinta w terminalu i sprawdzanie co przechodzi przez niego  npx eslint src/**/*.js
