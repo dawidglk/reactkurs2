@@ -3,7 +3,7 @@ import Button from 'components/Button/Button';
 
 const Root = () => (
   <p>
-    <Button>close/save</Button>
+    <Button width="300px">close/save</Button>
     <Button secondary>remove</Button>
   </p>
 );
