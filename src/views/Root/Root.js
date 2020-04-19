@@ -1,11 +1,20 @@
 import React from 'react';
-import Button from 'components/Button/Button';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import MainTemplate from 'templates/MainTemplate';
+import Articles from 'views/Articles/Articles';
+import Notes from 'views/Notes/Notes';
+import Twitters from 'views/Twitters/Twitters';
 
 const Root = () => (
-  <p>
-    <Button width="300px">close/save</Button>
-    <Button secondary>remove</Button>
-  </p>
+  <MainTemplate>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Notes} />
+        <Route path="/articles" component={Articles} />
+        <Route path="/twitters" component={Twitters} />
+      </Switch>
+    </BrowserRouter>
+  </MainTemplate>
 );
 
 export default Root;

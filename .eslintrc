@@ -5,6 +5,8 @@
   },
   "globals": { "document": true, "window": true, "fetch": true },
   "rules": {
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
     "import/no-unresolved": 1,
     "react/jsx-filename-extension": [
       1 /*1 - regula wlaczona , 0 - regulywa off*/,
